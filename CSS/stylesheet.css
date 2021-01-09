@@ -1,0 +1,214 @@
+body {
+    margin: 0px;
+    background-image: url(../Images/background.jpg);
+}
+h2 {
+    font-size: 60px;
+}
+p {
+    text-align: center;
+    font-size: 40px;
+}
+button {
+    text-align: center;
+}
+
+img#banner {
+    width: 1920px;
+    height: 288px;
+}
+img#homepage {
+    width: 400px;
+    height: 267px;
+}
+img#headImage {
+    width: 1500px;
+    height: 300px;
+}
+img#ad {
+    width: 300px;
+    height: 300px;
+}
+
+/*Navigation Bar Fanciness*/
+#navText {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+#navBox:hover {
+    background-color: lightgreen;
+}
+
+/*Navigation Bar*/
+.navContainer {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 30% repeat(4, 10%) 30%;
+    grid-template-rows: 288px 80px;
+    justify-content: center;
+}
+    .banner {
+        grid-column: 1 / span 7;
+        grid-row: 1 / span 1;
+    }
+    .navBox1 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        background-color: green;
+    }
+    .navBox2 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        background-color: green;
+    }
+    .navBox3 {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+        background-color: green;
+    }
+    .navBox4 {
+        grid-column: 5 / span 1;
+        grid-row: 2 / span 1;
+        background-color: green;
+    }
+    .navBarExtra1 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        background-color: lightgreen;
+    }
+    .navBarExtra2 {
+        grid-column: 6 / span 1;
+        grid-row: 2 / span 1;
+        background-color: lightgreen;
+    }
+
+/*Homepage*/
+.homepageContainer {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 23%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    margin: 75px 300px auto 300px;
+}
+    .homepageBox1 {
+        display: grid;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+        .imageBox1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            background-color: #4CBB17;
+        }
+        .titleBox1 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            background-color: #4CBB17;
+        }
+        .contentBox1 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            background-color: #4CBB17;
+        }
+        .buttonBox1 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+            background-color: #4CBB17;
+        }
+
+    .homepageBox2 {
+        display: grid;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+        .imageBox2 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            background-color: #308014;
+        }
+        .titleBox2 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            background-color: #308014;
+        }
+        .contentBox2 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            background-color: #308014;
+        }
+        .buttonBox2 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+            background-color: #308014;
+        }
+
+    .homepageBox3 {
+        display: grid;
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+        .imageBox3 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            background-color: #3A6629;
+        }
+        .titleBox3 {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            background-color: #3A6629;
+        }
+        .contentBox3 {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            background-color: #3A6629;
+        }
+        .buttonBox3 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+            background-color: #3A6629;
+        }
+
+/*Content on buying pages*/
+.contentContainer {
+    display: grid;
+    grid-template-columns: auto repeat(3, 23%) auto;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+}
+    .headImage {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+    }
+    .image1 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .image2 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .image3 {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .image4 {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+    .image5 {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+    }
+    .image6 {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
